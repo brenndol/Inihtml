@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Roteiros Turísticos</title>
+    <link rel="stylesheet" href="dest.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="styleshet">
+</head>
+<body>
+    <div class="container-destinos">
+        <div class="roteiros-viagens">
+            <form id="formulario">
+                <label for="inputDestino">Destino:</label>
+                <input type="text" id="inputDestino" required><br>
+                
+                <label for="inputInfo1">Informação 1:</label>
+                <input type="text" id="inputInfo1" required><br>
+                
+                <label for="inputInfo2">Informação 2:</label>
+                <input type="text" id="inputInfo2" required><br>
+
+                <label for="inputInfo3">Informação 3:</label>
+                <input type="text" id="inputInfo3" required><br>
+
+                <label for="inputValor">Valor:</label>
+                <input type="text" id="inputValor" required><br>
+
+                <label for="inputTaxas">Taxas:</label>
+                <input type="text" id="inputTaxas" required><br>
+
+                <label for="inputParcelamento">Parcelamento:</label>
+                <input type="text" id="inputParcelamento" required><br>
+
+                <label for="inputImagem">URL da Imagem:</label>
+                <input type="text" id="inputImagem" required><br>
+
+                <button type="button" onclick="inserirPacote()">Inserir</button>
+            </form>
+
+            <hr>
+
+            <div class="container-destinos">
+                <!-- Os destinos estaraão aqui -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
