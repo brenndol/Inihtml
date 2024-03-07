@@ -1,0 +1,20 @@
+<div class="container">
+    <app-carrinho  />
+    <div class="container-filtros">
+
+        <app-classes   title="Categoria" class="item"/>
+        <app-objetos   [title]="categoria ? categoria : 'Veiculos'" class="item"/>
+        <app-propriedades  title="Atributos" class="item"/>
+        
+        <app-valor-propriedade  [title]="propriedade ? propriedade : 'Propriedade'" class="item"/>
+    </div>
+    <app-botao class="item"/>
+    
+    <div class="lista">
+        <h1>Veículos Salvos</h1>
+        <div *ngFor="let nome of veiculosAdicionados">
+            <span>{{nome}}</span>
+            <hr>
+        </div>
+    </div>
+</div>
