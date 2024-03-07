@@ -1,0 +1,39 @@
+<div class="form-container">
+    <form id="formComum" (ngSubmit)="onSubmit()" #formulario="ngForm">
+      <label>
+        Nome:
+        <input name="nome"
+         ngModel
+         required
+         >
+      </label>
+      <label>
+        Email:
+        <input 
+          name="email"
+          type="email"
+          id="email"
+          ngModel
+          required
+          email
+          #email="ngModel">
+          <span *ngIf="!email.valid && email.touched">
+            Entre com um email válido
+          </span>
+      </label>
+      <label>
+        Localização:
+        <input 
+          name="localizacao" 
+          ngModel
+          required>
+      </label>
+      <select name="dropdown">
+        <option value="value1">Não Instalada</option>
+        <option value="value2">Instalada</option>
+        <option value="value3">Operante</option>
+      </select>
+      <button type="submit">Enviar</button>
+      </form>
+</div>
+
